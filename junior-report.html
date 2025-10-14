@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Report Card – A4</title>
+<style>
+  /* Only what's needed for print */
+  @page { size: A4 portrait; margin: 12mm; }
+  @media print { body { margin:0; padding:0; background:#fff; } }
+
+  /* Table styling */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    font-size: 7pt;
+    margin-top: 2mm;
+  }
+
+  th, td {
+    border: 0.5pt solid #333;
+    padding: 1.5mm;
+  }
+
+  th {
+    text-align: center;
+    font-weight: 700;
+  }
+
+  td {
+    text-align: center;
+  }
+
+  th:first-child, td:first-child {
+    text-align: left;
+  }
+
+  .label-prefix {
+    display: inline-block;
+    min-width: 9mm;
+  }
+</style>
+</head>
+<body style="margin:0; padding:16px; background:#f5f5f5; font-family: Arial, Helvetica, sans-serif; color:#111; line-height:1.1; -webkit-print-color-adjust:exact; print-color-adjust:exact;">
+
+  <!-- Single A4 page wrapper (screen preview). Border helps while designing. Remove if you want. -->
+  <div style="width:210mm; min-height:297mm; background:#fff; margin:0 auto; padding:10mm; border:0.5pt solid #333; box-sizing:border-box;">
+
+    <!-- Header -->
+    <div style="display:flex; align-items:center; gap:8mm; padding-bottom:4mm; border-bottom:0.5pt solid #333;">
+      <div style="width:22mm; height:22mm; border:0.5pt dashed #333; display:flex; align-items:center; justify-content:center; font-size:9pt; color:#555;">
+        LOGO
+      </div>
+      <div style="flex:1;">
+        <div style="font-size:9pt; color:#555;">BALESH'S EDUCATIONAL SOCIETY'S</div>
+        <div style="font-size:12pt; font-weight:800;">GOLDEN DAYS UNIVERSAL SCHOOL</div>
+        <div style="font-size:9pt; color:#555;">OZAR, NASHIK, MAHARASHTRA</div>
+        <div style="font-size:9pt; color:#555;">UDISE : 27201007928</div>
+        <div style="font-size:9pt; color:#555;">ACHIEVEMENT RECORD</div>
+        <div style="font-size:9pt; color:#555;">Academic Year : 2025-2026</div>
+      </div>
+    </div>
+
+    <div style="display:flex; gap:6mm; border:0.5pt solid #333; padding:2mm; margin-top:2mm; font-size:8pt;">
+        <div style="flex:1;">
+            <span style="font-weight:700;">NAME:</span>
+            <span style="border-bottom:0.5pt solid #333; display:inline-block; min-width:40mm;"></span>
+        </div>
+        <div style="flex:1;">
+            <span style="font-weight:700;">CLASS:</span>
+            <span style="border-bottom:0.5pt solid #333; display:inline-block; min-width:30mm;"></span>
+        </div>
+        <div style="flex:1;">
+            <span style="font-weight:700;">ROLL NO:</span>
+            <span style="border-bottom:0.5pt solid #333; display:inline-block; min-width:30mm;"></span>
+        </div>
+    </div>
+
+    <div style="font-weight:800; font-size:10pt; margin-top:3mm; text-align:center;">TERM I</div>
+
+    <!-- Part 1 : Academic Performance - Scholastic Area -->
+    <div style="font-weight:700; font-size:9pt; margin-top:3mm;">Part 1 : Academic Performance - Scholastic Area</div>
+     <table>
+        <thead>
+            <th>Subjects</th>
+            <th>PT (25)</th>
+            <th>NB (10)</th>
+            <th>SE (15)</th>
+            <th>TOT (50)</th>
+            <th>Gr</th>
+            <th>PT (25)</th>
+            <th>NB (10)</th>
+            <th>SE (15)</th>
+            <th>TOT (50)</th>
+            <th>Gr</th>
+            <th>Total</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>English</td>
+                <td>25</td>
+                <td>10</td>
+                <td>15</td>
+                <td>50</td>
+                <td>A</td>
+                <td>25</td>
+                <td>10</td>
+                <td>15</td>
+                <td>50</td>
+                <td>A</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>Hindi</td>
+                <td>25</td>
+                <td>10</td>
+                <td>15</td>
+                <td>50</td>
+                <td>A</td>
+                <td>25</td>
+                <td>10</td>
+                <td>15</td>
+                <td>50</td>
+                <td>A</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>Mathematics</td>
+                <td>25</td>
+                <td>10</td>
+                <td>15</td>
+                <td>50</td>
+                <td>A</td>
+                <td>25</td>
+                <td>10</td>
+                <td>15</td>
+                <td>50</td>
+                <td>A</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>Environmental Science</td>
+                <td>25</td>
+                <td>10</td>
+                <td>15</td>
+                <td>50</td>
+                <td>A</td>
+                <td>25</td>
+                <td>10</td>
+                <td>15</td>
+                <td>50</td>
+                <td>A</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>Marathi</td>
+                <td>25</td>
+                <td>10</td>
+                <td>15</td>
+                <td>50</td>
+                <td>A</td>
+                <td>25</td>
+                <td>10</td>
+                <td>15</td>
+                <td>50</td>
+                <td>A</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>Computer</td>
+                <td>25</td>
+                <td>10</td>
+                <td>15</td>
+                <td>50</td>
+                <td>A</td>
+                <td>25</td>
+                <td>10</td>
+                <td>15</td>
+                <td>50</td>
+                <td>A</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td style="font-weight:700;">Total</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td style="font-weight:700;">%</td>
+                <td>0%</td>
+            </tr>
+        </tbody>
+     </table>
+
+     <!-- Part 2 : Co-Scholastic Area -->
+    <div style="font-weight:700; font-size:9pt; margin-top:3mm;">Part 2 : Co-Scholastic Area</div>
+
+    <table style="font-size:7.5pt;">
+      <thead>
+        <tr>
+          <th style="width:30%;">English</th>
+          <th style="width:20%;">Grade</th>
+          <th style="width:30%;">Hindi</th>
+          <th style="width:20%;">Grade</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="label-prefix">01.</span>Listening Skills</td>
+          <td>&nbsp;</td>
+          <td style="text-align:left;"><span class="label-prefix">01.</span>Listening Skills</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td><span class="label-prefix">02.</span>Speaking Skills</td>
+          <td>&nbsp;</td>
+          <td style="text-align:left;"><span class="label-prefix">02.</span>Speaking Skills</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td><span class="label-prefix">&nbsp;</span>Conversation</td>
+          <td>&nbsp;</td>
+          <td style="text-align:left;"><span class="label-prefix">&nbsp;</span>Conversation</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td><span class="label-prefix">&nbsp;</span>Recitation</td>
+          <td>&nbsp;</td>
+          <td style="text-align:left;"><span class="label-prefix">&nbsp;</span>Recitation</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td><span class="label-prefix">03.</span>Reading Skills</td>
+          <td>&nbsp;</td>
+          <td style="text-align:left;"><span class="label-prefix">03.</span>Reading Skills</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td><span class="label-prefix">&nbsp;</span>Pronunciation &amp; Fluency</td>
+          <td>&nbsp;</td>
+          <td style="text-align:left;"><span class="label-prefix">&nbsp;</span>Pronunciation &amp; Fluency</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td><span class="label-prefix">&nbsp;</span>Comprehension</td>
+          <td>&nbsp;</td>
+          <td style="text-align:left;"><span class="label-prefix">&nbsp;</span>Comprehension</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td><span class="label-prefix">04.</span>Writing Skills</td>
+          <td>&nbsp;</td>
+          <td style="text-align:left;"><span class="label-prefix">04.</span>Writing Skills</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td><span class="label-prefix">&nbsp;</span>Spellings and Vocabulary</td>
+          <td>&nbsp;</td>
+          <td style="text-align:left;"><span class="label-prefix">&nbsp;</span>Spellings and Vocabulary</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td><span class="label-prefix">&nbsp;</span>Handwriting</td>
+          <td>&nbsp;</td>
+          <td style="text-align:left;"><span class="label-prefix">&nbsp;</span>Handwriting</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td><span class="label-prefix">&nbsp;</span>Creative Writing</td>
+          <td>&nbsp;</td>
+          <td style="text-align:left;"><span class="label-prefix">&nbsp;</span>Creative Writing</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td><span class="label-prefix">05.</span>Extra Reading</td>
+          <td>&nbsp;</td>
+          <td style="text-align:left;"><span class="label-prefix">05.</span>Extra Reading</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td style="font-weight:700;"><span class="label-prefix">&nbsp;</span>Mathematics</td>
+          <td>&nbsp;</td>
+          <td style="font-weight:700; text-align:left;"><span class="label-prefix">&nbsp;</span>General Knowledge</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td><span class="label-prefix">&nbsp;</span>Mental Ability</td>
+          <td>&nbsp;</td>
+          <td style="text-align:left;"><span class="label-prefix">&nbsp;</span>Term - I</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td><span class="label-prefix">&nbsp;</span>Table</td>
+          <td>&nbsp;</td>
+          <td style="text-align:left;"><span class="label-prefix">&nbsp;</span>Activity</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td><span class="label-prefix">&nbsp;</span>Activity</td>
+          <td>&nbsp;</td>
+          <td style="text-align:left;"><span class="label-prefix">&nbsp;</span>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td style="font-weight:700;"><span class="label-prefix">&nbsp;</span>Environmental Science</td>
+          <td>&nbsp;</td>
+          <td style="font-weight:700; text-align:left;"><span class="label-prefix">&nbsp;</span>Value Education</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td><span class="label-prefix">&nbsp;</span>Activity and Project</td>
+          <td>&nbsp;</td>
+          <td style="text-align:left;"><span class="label-prefix">&nbsp;</span>Term - I</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td><span class="label-prefix">&nbsp;</span>Group Discussion</td>
+          <td>&nbsp;</td>
+          <td style="text-align:left;"><span class="label-prefix">&nbsp;</span>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+     </tbody>
+    </table>
+
+
+    <!-- Part 3 : Co-Scholastic Activities -->
+     <div style="font-weight:700; font-size:9pt; margin-top:3mm;">Part 3 : Co-Scholastic Activities</div>
+
+    <table style="font-size:7.5pt;">
+      <thead>
+        <tr>
+          <th style="width:30%;">Games</th>
+          <th style="width:20%;">Grade</th>
+          <th style="width:30%;">Personality Development</th>
+          <th style="width:20%;">Grade</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="label-prefix">&nbsp;</span>Team Spirit</td>
+          <td>&nbsp;</td>
+          <td style="text-align:left;"><span class="label-prefix">&nbsp;</span>Self Awareness</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td><span class="label-prefix">&nbsp;</span>Talent</td>
+          <td>&nbsp;</td>
+          <td style="text-align:left;"><span class="label-prefix">&nbsp;</span>Effective Communication</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td><span class="label-prefix">&nbsp;</span>Interpersonal Relationship</td>
+          <td>&nbsp;</td>
+          <td style="text-align:left;"><span class="label-prefix">&nbsp;</span>Cleanliness of Self and Surrounding</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td style="font-weight:700;"><span class="label-prefix">&nbsp;</span>Art and Craft</td>
+          <td>&nbsp;</td>
+          <td style="font-weight:700; text-align:left;"><span class="label-prefix">&nbsp;</span>Dealing with Emotions</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td><span class="label-prefix">&nbsp;</span>Skill</td>
+          <td>&nbsp;</td>
+          <td style="text-align:left;"><span class="label-prefix">&nbsp;</span>Attitude and Value</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td><span class="label-prefix">&nbsp;</span>Creativity</td>
+          <td>&nbsp;</td>
+          <td style="text-align:left;">&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td style="font-weight:700;"><span class="label-prefix">&nbsp;</span>Music / Dance</td>
+          <td>&nbsp;</td>
+          <td style="font-weight:700; text-align:left;">&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td><span class="label-prefix">&nbsp;</span>Melody</td>
+          <td>&nbsp;</td>
+          <td style="text-align:left;"><span class="label-prefix">&nbsp;</span>Rhythm</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td style="font-weight:700;">HEIGHT :</td>
+          <td>&nbsp;</td>
+          <td style="font-weight:700; text-align:left;">ATTENDANCE :</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td style="font-weight:700;">WEIGHT :</td>
+          <td>&nbsp;</td>
+          <td style="text-align:left;">&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+      </tbody>
+    </table>
+
+
+
+    <!-- Remarks + Signatures -->
+    <div style="border:0.5pt solid #333; padding:3mm; margin-top:3mm;">
+      <div style="font-weight:700; margin-bottom:2mm;">Teacher's Remarks :</div>
+      <div style="height:10mm; "></div>
+      <div style="display:flex; gap:6mm;">
+        <div style="flex:1; text-align:center; font-size:9pt;">
+          <div style="height:10mm; border-bottom:0.5pt dashed #333;"></div>
+          <div style="margin-top:1.5mm;">Class Teacher's Sign</div>
+        </div>
+        <div style="flex:1; text-align:center; font-size:9pt;">
+          <div style="height:10mm; border-bottom:0.5pt dashed #333;"></div>
+          <div style="margin-top:1.5mm;">Principal's Sign</div>
+        </div>
+        <div style="flex:1; text-align:center; font-size:9pt;">
+          <div style="height:10mm; border-bottom:0.5pt dashed #333;"></div>
+          <div style="margin-top:1.5mm;">Parent's Sign</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
