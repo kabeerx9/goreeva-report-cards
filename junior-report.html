@@ -14,7 +14,6 @@
     border-collapse: collapse;
     table-layout: fixed;
     font-size: 7pt;
-    margin-top: 2mm;
   }
 
   body {
@@ -45,22 +44,26 @@
     color: #5b21b6;
   }
 
-  .term-heading {
+  .term-heading,
+  .part-heading {
     color: #d97706;
     background: #e1f5d3;
-    display: inline-block;
-    padding: 1.5mm 6mm;
-    border-radius: 2mm;
+    display: block;
+    text-align: center;
+    padding: 2mm 0;
+    font-weight: 700;
+    margin: 0;
+    border-top: 0.5pt solid #a85508;
+    border-bottom: 0.5pt solid #a85508;
+  }
+
+  .term-heading {
+    font-size: 10pt;
     font-weight: 800;
   }
 
   .part-heading {
-    color: #d97706;
-    background: #e1f5d3;
-    display: inline-block;
-    padding: 1mm 4mm;
-    border-radius: 1.5mm;
-    font-weight: 700;
+    font-size: 9pt;
   }
 
   .text-red {
@@ -126,14 +129,10 @@
         </div>
     </div>
 
-    <div style="font-size:10pt; margin-top:3mm; text-align:center;">
-      <span class="term-heading">TERM I</span>
-    </div>
+    <div class="term-heading" style="margin-top:3mm;">TERM I</div>
 
     <!-- Part 1 : Academic Performance - Scholastic Area -->
-    <div style="font-size:9pt; margin-top:3mm;">
-      <span class="part-heading">Part 1 : Academic Performance - Scholastic Area</span>
-    </div>
+    <div class="part-heading">Part 1 : Academic Performance - Scholastic Area</div>
      <table class="table-scholastic">
         <thead>
           <tr>
@@ -268,9 +267,7 @@
      </table>
 
      <!-- Part 2 : Co-Scholastic Area -->
-    <div style="font-size:9pt; margin-top:3mm;">
-      <span class="part-heading">Part 2 : Co-Scholastic Area</span>
-    </div>
+    <div class="part-heading">Part 2 : Co-Scholastic Area</div>
 
     <table class="table-language" style="font-size:7.5pt;">
       <thead>
@@ -401,9 +398,7 @@
 
 
     <!-- Part 3 : Co-Scholastic Activities -->
-     <div style="font-size:9pt; margin-top:3mm;">
-       <span class="part-heading">Part 3 : Co-Scholastic Activities</span>
-     </div>
+     <div class="part-heading">Part 3 : Co-Scholastic Activities</div>
 
     <table class="table-coscholastic" style="font-size:7.5pt;">
       <thead>
