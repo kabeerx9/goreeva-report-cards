@@ -17,6 +17,10 @@
     margin-top: 2mm;
   }
 
+  body {
+    color: #10224f;
+  }
+
   th, td {
     border: 0.5pt solid #333;
     padding: 1.5mm;
@@ -38,10 +42,56 @@
   .label-prefix {
     display: inline-block;
     min-width: 9mm;
+    color: #5b21b6;
+  }
+
+  .term-heading {
+    color: #d97706;
+    background: #e1f5d3;
+    display: inline-block;
+    padding: 1.5mm 6mm;
+    border-radius: 2mm;
+    font-weight: 800;
+  }
+
+  .part-heading {
+    color: #d97706;
+    background: #e1f5d3;
+    display: inline-block;
+    padding: 1mm 4mm;
+    border-radius: 1.5mm;
+    font-weight: 700;
+  }
+
+  .text-red {
+    color: #c1121f;
+  }
+
+  .header-purple {
+    color: #5b21b6;
+  }
+
+  .header-sky {
+    color: #0ea5e9;
+  }
+
+  .subject-color {
+    color: #d946ef;
+    font-weight: 600;
+  }
+
+  .subject-strong {
+    color: #d946ef;
+    font-weight: 700;
+  }
+
+  .grade-color {
+    color: #0ea5e9;
+    font-weight: 600;
   }
 </style>
 </head>
-<body style="margin:0; padding:16px; background:#f5f5f5; font-family: Arial, Helvetica, sans-serif; color:#111; line-height:1.1; -webkit-print-color-adjust:exact; print-color-adjust:exact;">
+<body style="margin:0; padding:16px; background:#f5f5f5; font-family: Arial, Helvetica, sans-serif; color:#10224f; line-height:1.1; -webkit-print-color-adjust:exact; print-color-adjust:exact;">
 
   <!-- Single A4 page wrapper (screen preview). Border helps while designing. Remove if you want. -->
   <div style="width:210mm; min-height:297mm; background:#fff; margin:0 auto; padding:10mm; border:0.5pt solid #333; box-sizing:border-box;">
@@ -52,12 +102,12 @@
         LOGO
       </div>
       <div style="flex:1;">
-        <div style="font-size:9pt; color:#555;">BALESH'S EDUCATIONAL SOCIETY'S</div>
-        <div style="font-size:12pt; font-weight:800;">GOLDEN DAYS UNIVERSAL SCHOOL</div>
-        <div style="font-size:9pt; color:#555;">OZAR, NASHIK, MAHARASHTRA</div>
-        <div style="font-size:9pt; color:#555;">UDISE : 27201007928</div>
-        <div style="font-size:9pt; color:#555;">ACHIEVEMENT RECORD</div>
-        <div style="font-size:9pt; color:#555;">Academic Year : 2025-2026</div>
+        <div style="font-size:9pt; color:#10224f;">BALESH'S EDUCATIONAL SOCIETY'S</div>
+        <div class="text-red" style="font-size:12pt; font-weight:800;">GOLDEN DAYS UNIVERSAL SCHOOL</div>
+        <div style="font-size:9pt; color:#10224f;">OZAR, NASHIK, MAHARASHTRA</div>
+        <div style="font-size:9pt; color:#10224f;">UDISE : 27201007928</div>
+        <div class="text-red" style="font-size:9pt;">ACHIEVEMENT RECORD</div>
+        <div style="font-size:9pt; color:#10224f;">Academic Year : 2025-2026</div>
       </div>
     </div>
 
@@ -76,28 +126,34 @@
         </div>
     </div>
 
-    <div style="font-weight:800; font-size:10pt; margin-top:3mm; text-align:center;">TERM I</div>
+    <div style="font-size:10pt; margin-top:3mm; text-align:center;">
+      <span class="term-heading">TERM I</span>
+    </div>
 
     <!-- Part 1 : Academic Performance - Scholastic Area -->
-    <div style="font-weight:700; font-size:9pt; margin-top:3mm;">Part 1 : Academic Performance - Scholastic Area</div>
-     <table>
+    <div style="font-size:9pt; margin-top:3mm;">
+      <span class="part-heading">Part 1 : Academic Performance - Scholastic Area</span>
+    </div>
+     <table class="table-scholastic">
         <thead>
-            <th>Subjects</th>
-            <th>PT (25)</th>
-            <th>NB (10)</th>
-            <th>SE (15)</th>
-            <th>TOT (50)</th>
-            <th>Gr</th>
-            <th>PT (25)</th>
-            <th>NB (10)</th>
-            <th>SE (15)</th>
-            <th>TOT (50)</th>
-            <th>Gr</th>
-            <th>Total</th>
+          <tr>
+            <th class="header-purple">Subjects</th>
+            <th class="header-purple">PT (25)</th>
+            <th class="header-purple">NB (10)</th>
+            <th class="header-purple">SE (15)</th>
+            <th class="header-purple">TOT (50)</th>
+            <th class="header-purple">Gr</th>
+            <th class="header-purple">PT (25)</th>
+            <th class="header-purple">NB (10)</th>
+            <th class="header-purple">SE (15)</th>
+            <th class="header-purple">TOT (50)</th>
+            <th class="header-purple">Gr</th>
+            <th class="header-sky">Total</th>
+          </tr>
         </thead>
         <tbody>
             <tr>
-                <td>English</td>
+                <td class="subject-color">English</td>
                 <td>25</td>
                 <td>10</td>
                 <td>15</td>
@@ -111,7 +167,7 @@
                 <td>100</td>
             </tr>
             <tr>
-                <td>Hindi</td>
+                <td class="subject-color">Hindi</td>
                 <td>25</td>
                 <td>10</td>
                 <td>15</td>
@@ -125,7 +181,7 @@
                 <td>100</td>
             </tr>
             <tr>
-                <td>Mathematics</td>
+                <td class="subject-color">Mathematics</td>
                 <td>25</td>
                 <td>10</td>
                 <td>15</td>
@@ -139,7 +195,7 @@
                 <td>100</td>
             </tr>
             <tr>
-                <td>Environmental Science</td>
+                <td class="subject-color">Environmental Science</td>
                 <td>25</td>
                 <td>10</td>
                 <td>15</td>
@@ -153,7 +209,7 @@
                 <td>100</td>
             </tr>
             <tr>
-                <td>Marathi</td>
+                <td class="subject-color">Marathi</td>
                 <td>25</td>
                 <td>10</td>
                 <td>15</td>
@@ -167,7 +223,7 @@
                 <td>100</td>
             </tr>
             <tr>
-                <td>Computer</td>
+                <td class="subject-color">Computer</td>
                 <td>25</td>
                 <td>10</td>
                 <td>15</td>
@@ -191,7 +247,7 @@
                 <td></td>
                 <td></td>
                 <td></td>
-                <td style="font-weight:700;">Total</td>
+                <td class="subject-strong">Total</td>
                 <td>0</td>
             </tr>
             <tr>
@@ -205,16 +261,18 @@
                 <td></td>
                 <td></td>
                 <td></td>
-                <td style="font-weight:700;">%</td>
+                <td class="subject-strong">%</td>
                 <td>0%</td>
             </tr>
         </tbody>
      </table>
 
      <!-- Part 2 : Co-Scholastic Area -->
-    <div style="font-weight:700; font-size:9pt; margin-top:3mm;">Part 2 : Co-Scholastic Area</div>
+    <div style="font-size:9pt; margin-top:3mm;">
+      <span class="part-heading">Part 2 : Co-Scholastic Area</span>
+    </div>
 
-    <table style="font-size:7.5pt;">
+    <table class="table-language" style="font-size:7.5pt;">
       <thead>
         <tr>
           <th style="width:30%;">English</th>
@@ -225,127 +283,129 @@
       </thead>
       <tbody>
         <tr>
-          <td><span class="label-prefix">01.</span>Listening Skills</td>
-          <td>&nbsp;</td>
-          <td style="text-align:left;"><span class="label-prefix">01.</span>Listening Skills</td>
-          <td>&nbsp;</td>
+          <td class="subject-color"><span class="label-prefix">01.</span>Listening Skills</td>
+          <td class="grade-color">&nbsp;</td>
+          <td class="subject-color" style="text-align:left;"><span class="label-prefix">01.</span>Listening Skills</td>
+          <td class="grade-color">&nbsp;</td>
         </tr>
         <tr>
-          <td><span class="label-prefix">02.</span>Speaking Skills</td>
-          <td>&nbsp;</td>
-          <td style="text-align:left;"><span class="label-prefix">02.</span>Speaking Skills</td>
-          <td>&nbsp;</td>
+          <td class="subject-color"><span class="label-prefix">02.</span>Speaking Skills</td>
+          <td class="grade-color">&nbsp;</td>
+          <td class="subject-color" style="text-align:left;"><span class="label-prefix">02.</span>Speaking Skills</td>
+          <td class="grade-color">&nbsp;</td>
         </tr>
         <tr>
-          <td><span class="label-prefix">&nbsp;</span>Conversation</td>
-          <td>&nbsp;</td>
-          <td style="text-align:left;"><span class="label-prefix">&nbsp;</span>Conversation</td>
-          <td>&nbsp;</td>
+          <td class="subject-color"><span class="label-prefix">&nbsp;</span>Conversation</td>
+          <td class="grade-color">&nbsp;</td>
+          <td class="subject-color" style="text-align:left;"><span class="label-prefix">&nbsp;</span>Conversation</td>
+          <td class="grade-color">&nbsp;</td>
         </tr>
         <tr>
-          <td><span class="label-prefix">&nbsp;</span>Recitation</td>
-          <td>&nbsp;</td>
-          <td style="text-align:left;"><span class="label-prefix">&nbsp;</span>Recitation</td>
-          <td>&nbsp;</td>
+          <td class="subject-color"><span class="label-prefix">&nbsp;</span>Recitation</td>
+          <td class="grade-color">&nbsp;</td>
+          <td class="subject-color" style="text-align:left;"><span class="label-prefix">&nbsp;</span>Recitation</td>
+          <td class="grade-color">&nbsp;</td>
         </tr>
         <tr>
-          <td><span class="label-prefix">03.</span>Reading Skills</td>
-          <td>&nbsp;</td>
-          <td style="text-align:left;"><span class="label-prefix">03.</span>Reading Skills</td>
-          <td>&nbsp;</td>
+          <td class="subject-color"><span class="label-prefix">03.</span>Reading Skills</td>
+          <td class="grade-color">&nbsp;</td>
+          <td class="subject-color" style="text-align:left;"><span class="label-prefix">03.</span>Reading Skills</td>
+          <td class="grade-color">&nbsp;</td>
         </tr>
         <tr>
-          <td><span class="label-prefix">&nbsp;</span>Pronunciation &amp; Fluency</td>
-          <td>&nbsp;</td>
-          <td style="text-align:left;"><span class="label-prefix">&nbsp;</span>Pronunciation &amp; Fluency</td>
-          <td>&nbsp;</td>
+          <td class="subject-color"><span class="label-prefix">&nbsp;</span>Pronunciation &amp; Fluency</td>
+          <td class="grade-color">&nbsp;</td>
+          <td class="subject-color" style="text-align:left;"><span class="label-prefix">&nbsp;</span>Pronunciation &amp; Fluency</td>
+          <td class="grade-color">&nbsp;</td>
         </tr>
         <tr>
-          <td><span class="label-prefix">&nbsp;</span>Comprehension</td>
-          <td>&nbsp;</td>
-          <td style="text-align:left;"><span class="label-prefix">&nbsp;</span>Comprehension</td>
-          <td>&nbsp;</td>
+          <td class="subject-color"><span class="label-prefix">&nbsp;</span>Comprehension</td>
+          <td class="grade-color">&nbsp;</td>
+          <td class="subject-color" style="text-align:left;"><span class="label-prefix">&nbsp;</span>Comprehension</td>
+          <td class="grade-color">&nbsp;</td>
         </tr>
         <tr>
-          <td><span class="label-prefix">04.</span>Writing Skills</td>
-          <td>&nbsp;</td>
-          <td style="text-align:left;"><span class="label-prefix">04.</span>Writing Skills</td>
-          <td>&nbsp;</td>
+          <td class="subject-color"><span class="label-prefix">04.</span>Writing Skills</td>
+          <td class="grade-color">&nbsp;</td>
+          <td class="subject-color" style="text-align:left;"><span class="label-prefix">04.</span>Writing Skills</td>
+          <td class="grade-color">&nbsp;</td>
         </tr>
         <tr>
-          <td><span class="label-prefix">&nbsp;</span>Spellings and Vocabulary</td>
-          <td>&nbsp;</td>
-          <td style="text-align:left;"><span class="label-prefix">&nbsp;</span>Spellings and Vocabulary</td>
-          <td>&nbsp;</td>
+          <td class="subject-color"><span class="label-prefix">&nbsp;</span>Spellings and Vocabulary</td>
+          <td class="grade-color">&nbsp;</td>
+          <td class="subject-color" style="text-align:left;"><span class="label-prefix">&nbsp;</span>Spellings and Vocabulary</td>
+          <td class="grade-color">&nbsp;</td>
         </tr>
         <tr>
-          <td><span class="label-prefix">&nbsp;</span>Handwriting</td>
-          <td>&nbsp;</td>
-          <td style="text-align:left;"><span class="label-prefix">&nbsp;</span>Handwriting</td>
-          <td>&nbsp;</td>
+          <td class="subject-color"><span class="label-prefix">&nbsp;</span>Handwriting</td>
+          <td class="grade-color">&nbsp;</td>
+          <td class="subject-color" style="text-align:left;"><span class="label-prefix">&nbsp;</span>Handwriting</td>
+          <td class="grade-color">&nbsp;</td>
         </tr>
         <tr>
-          <td><span class="label-prefix">&nbsp;</span>Creative Writing</td>
-          <td>&nbsp;</td>
-          <td style="text-align:left;"><span class="label-prefix">&nbsp;</span>Creative Writing</td>
-          <td>&nbsp;</td>
+          <td class="subject-color"><span class="label-prefix">&nbsp;</span>Creative Writing</td>
+          <td class="grade-color">&nbsp;</td>
+          <td class="subject-color" style="text-align:left;"><span class="label-prefix">&nbsp;</span>Creative Writing</td>
+          <td class="grade-color">&nbsp;</td>
         </tr>
         <tr>
-          <td><span class="label-prefix">05.</span>Extra Reading</td>
-          <td>&nbsp;</td>
-          <td style="text-align:left;"><span class="label-prefix">05.</span>Extra Reading</td>
-          <td>&nbsp;</td>
+          <td class="subject-color"><span class="label-prefix">05.</span>Extra Reading</td>
+          <td class="grade-color">&nbsp;</td>
+          <td class="subject-color" style="text-align:left;"><span class="label-prefix">05.</span>Extra Reading</td>
+          <td class="grade-color">&nbsp;</td>
         </tr>
         <tr>
-          <td style="font-weight:700;"><span class="label-prefix">&nbsp;</span>Mathematics</td>
-          <td>&nbsp;</td>
-          <td style="font-weight:700; text-align:left;"><span class="label-prefix">&nbsp;</span>General Knowledge</td>
-          <td>&nbsp;</td>
+          <td class="subject-strong"><span class="label-prefix">&nbsp;</span>Mathematics</td>
+          <td class="grade-color">&nbsp;</td>
+          <td class="subject-strong" style="text-align:left;"><span class="label-prefix">&nbsp;</span>General Knowledge</td>
+          <td class="grade-color">&nbsp;</td>
         </tr>
         <tr>
-          <td><span class="label-prefix">&nbsp;</span>Mental Ability</td>
-          <td>&nbsp;</td>
-          <td style="text-align:left;"><span class="label-prefix">&nbsp;</span>Term - I</td>
-          <td>&nbsp;</td>
+          <td class="subject-color"><span class="label-prefix">&nbsp;</span>Mental Ability</td>
+          <td class="grade-color">&nbsp;</td>
+          <td class="subject-color" style="text-align:left;"><span class="label-prefix">&nbsp;</span>Term - I</td>
+          <td class="grade-color">&nbsp;</td>
         </tr>
         <tr>
-          <td><span class="label-prefix">&nbsp;</span>Table</td>
-          <td>&nbsp;</td>
-          <td style="text-align:left;"><span class="label-prefix">&nbsp;</span>Activity</td>
-          <td>&nbsp;</td>
+          <td class="subject-color"><span class="label-prefix">&nbsp;</span>Table</td>
+          <td class="grade-color">&nbsp;</td>
+          <td class="subject-color" style="text-align:left;"><span class="label-prefix">&nbsp;</span>Activity</td>
+          <td class="grade-color">&nbsp;</td>
         </tr>
         <tr>
-          <td><span class="label-prefix">&nbsp;</span>Activity</td>
-          <td>&nbsp;</td>
-          <td style="text-align:left;"><span class="label-prefix">&nbsp;</span>&nbsp;</td>
-          <td>&nbsp;</td>
+          <td class="subject-color"><span class="label-prefix">&nbsp;</span>Activity</td>
+          <td class="grade-color">&nbsp;</td>
+          <td class="subject-color" style="text-align:left;"><span class="label-prefix">&nbsp;</span>&nbsp;</td>
+          <td class="grade-color">&nbsp;</td>
         </tr>
         <tr>
-          <td style="font-weight:700;"><span class="label-prefix">&nbsp;</span>Environmental Science</td>
-          <td>&nbsp;</td>
-          <td style="font-weight:700; text-align:left;"><span class="label-prefix">&nbsp;</span>Value Education</td>
-          <td>&nbsp;</td>
+          <td class="subject-strong"><span class="label-prefix">&nbsp;</span>Environmental Science</td>
+          <td class="grade-color">&nbsp;</td>
+          <td class="subject-strong" style="text-align:left;"><span class="label-prefix">&nbsp;</span>Value Education</td>
+          <td class="grade-color">&nbsp;</td>
         </tr>
         <tr>
-          <td><span class="label-prefix">&nbsp;</span>Activity and Project</td>
-          <td>&nbsp;</td>
-          <td style="text-align:left;"><span class="label-prefix">&nbsp;</span>Term - I</td>
-          <td>&nbsp;</td>
+          <td class="subject-color"><span class="label-prefix">&nbsp;</span>Activity and Project</td>
+          <td class="grade-color">&nbsp;</td>
+          <td class="subject-color" style="text-align:left;"><span class="label-prefix">&nbsp;</span>Term - I</td>
+          <td class="grade-color">&nbsp;</td>
         </tr>
         <tr>
-          <td><span class="label-prefix">&nbsp;</span>Group Discussion</td>
-          <td>&nbsp;</td>
-          <td style="text-align:left;"><span class="label-prefix">&nbsp;</span>&nbsp;</td>
-          <td>&nbsp;</td>
+          <td class="subject-color"><span class="label-prefix">&nbsp;</span>Group Discussion</td>
+          <td class="grade-color">&nbsp;</td>
+          <td class="subject-color" style="text-align:left;"><span class="label-prefix">&nbsp;</span>&nbsp;</td>
+          <td class="grade-color">&nbsp;</td>
         </tr>
-     </tbody>
+      </tbody>
     </table>
 
 
     <!-- Part 3 : Co-Scholastic Activities -->
-     <div style="font-weight:700; font-size:9pt; margin-top:3mm;">Part 3 : Co-Scholastic Activities</div>
+     <div style="font-size:9pt; margin-top:3mm;">
+       <span class="part-heading">Part 3 : Co-Scholastic Activities</span>
+     </div>
 
-    <table style="font-size:7.5pt;">
+    <table class="table-coscholastic" style="font-size:7.5pt;">
       <thead>
         <tr>
           <th style="width:30%;">Games</th>
@@ -356,64 +416,64 @@
       </thead>
       <tbody>
         <tr>
-          <td><span class="label-prefix">&nbsp;</span>Team Spirit</td>
-          <td>&nbsp;</td>
-          <td style="text-align:left;"><span class="label-prefix">&nbsp;</span>Self Awareness</td>
-          <td>&nbsp;</td>
+          <td class="subject-color"><span class="label-prefix">&nbsp;</span>Team Spirit</td>
+          <td class="grade-color">&nbsp;</td>
+          <td class="subject-color" style="text-align:left;"><span class="label-prefix">&nbsp;</span>Self Awareness</td>
+          <td class="grade-color">&nbsp;</td>
         </tr>
         <tr>
-          <td><span class="label-prefix">&nbsp;</span>Talent</td>
-          <td>&nbsp;</td>
-          <td style="text-align:left;"><span class="label-prefix">&nbsp;</span>Effective Communication</td>
-          <td>&nbsp;</td>
+          <td class="subject-color"><span class="label-prefix">&nbsp;</span>Talent</td>
+          <td class="grade-color">&nbsp;</td>
+          <td class="subject-color" style="text-align:left;"><span class="label-prefix">&nbsp;</span>Effective Communication</td>
+          <td class="grade-color">&nbsp;</td>
         </tr>
         <tr>
-          <td><span class="label-prefix">&nbsp;</span>Interpersonal Relationship</td>
-          <td>&nbsp;</td>
-          <td style="text-align:left;"><span class="label-prefix">&nbsp;</span>Cleanliness of Self and Surrounding</td>
-          <td>&nbsp;</td>
+          <td class="subject-color"><span class="label-prefix">&nbsp;</span>Interpersonal Relationship</td>
+          <td class="grade-color">&nbsp;</td>
+          <td class="subject-color" style="text-align:left;"><span class="label-prefix">&nbsp;</span>Cleanliness of Self and Surrounding</td>
+          <td class="grade-color">&nbsp;</td>
         </tr>
         <tr>
-          <td style="font-weight:700;"><span class="label-prefix">&nbsp;</span>Art and Craft</td>
-          <td>&nbsp;</td>
-          <td style="font-weight:700; text-align:left;"><span class="label-prefix">&nbsp;</span>Dealing with Emotions</td>
-          <td>&nbsp;</td>
+          <td class="subject-strong"><span class="label-prefix">&nbsp;</span>Art and Craft</td>
+          <td class="grade-color">&nbsp;</td>
+          <td class="subject-strong" style="text-align:left;"><span class="label-prefix">&nbsp;</span>Dealing with Emotions</td>
+          <td class="grade-color">&nbsp;</td>
         </tr>
         <tr>
-          <td><span class="label-prefix">&nbsp;</span>Skill</td>
-          <td>&nbsp;</td>
-          <td style="text-align:left;"><span class="label-prefix">&nbsp;</span>Attitude and Value</td>
-          <td>&nbsp;</td>
+          <td class="subject-color"><span class="label-prefix">&nbsp;</span>Skill</td>
+          <td class="grade-color">&nbsp;</td>
+          <td class="subject-color" style="text-align:left;"><span class="label-prefix">&nbsp;</span>Attitude and Value</td>
+          <td class="grade-color">&nbsp;</td>
         </tr>
         <tr>
-          <td><span class="label-prefix">&nbsp;</span>Creativity</td>
-          <td>&nbsp;</td>
-          <td style="text-align:left;">&nbsp;</td>
-          <td>&nbsp;</td>
+          <td class="subject-color"><span class="label-prefix">&nbsp;</span>Creativity</td>
+          <td class="grade-color">&nbsp;</td>
+          <td class="subject-color" style="text-align:left;">&nbsp;</td>
+          <td class="grade-color">&nbsp;</td>
         </tr>
         <tr>
-          <td style="font-weight:700;"><span class="label-prefix">&nbsp;</span>Music / Dance</td>
-          <td>&nbsp;</td>
-          <td style="font-weight:700; text-align:left;">&nbsp;</td>
-          <td>&nbsp;</td>
+          <td class="subject-strong"><span class="label-prefix">&nbsp;</span>Music / Dance</td>
+          <td class="grade-color">&nbsp;</td>
+          <td class="subject-strong" style="text-align:left;">&nbsp;</td>
+          <td class="grade-color">&nbsp;</td>
         </tr>
         <tr>
-          <td><span class="label-prefix">&nbsp;</span>Melody</td>
-          <td>&nbsp;</td>
-          <td style="text-align:left;"><span class="label-prefix">&nbsp;</span>Rhythm</td>
-          <td>&nbsp;</td>
+          <td class="subject-color"><span class="label-prefix">&nbsp;</span>Melody</td>
+          <td class="grade-color">&nbsp;</td>
+          <td class="subject-color" style="text-align:left;"><span class="label-prefix">&nbsp;</span>Rhythm</td>
+          <td class="grade-color">&nbsp;</td>
         </tr>
         <tr>
-          <td style="font-weight:700;">HEIGHT :</td>
-          <td>&nbsp;</td>
-          <td style="font-weight:700; text-align:left;">ATTENDANCE :</td>
-          <td>&nbsp;</td>
+          <td class="subject-strong">HEIGHT :</td>
+          <td class="grade-color">&nbsp;</td>
+          <td class="subject-strong" style="text-align:left;">ATTENDANCE :</td>
+          <td class="grade-color">&nbsp;</td>
         </tr>
         <tr>
-          <td style="font-weight:700;">WEIGHT :</td>
-          <td>&nbsp;</td>
-          <td style="text-align:left;">&nbsp;</td>
-          <td>&nbsp;</td>
+          <td class="subject-strong">WEIGHT :</td>
+          <td class="grade-color">&nbsp;</td>
+          <td class="subject-color" style="text-align:left;">&nbsp;</td>
+          <td class="grade-color">&nbsp;</td>
         </tr>
       </tbody>
     </table>
